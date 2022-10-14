@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+        // Assignment 3 ( a )
+        var user_number = Math.floor(Math.random() * 101 ); // Return random number between 0 and 100
+        var random_number = Math.floor(Math.random() * 101); // Return random number between 0 and 100
+
+        if (user_number > random_number)
+            console.log("User WON!!!");
+        else if (user_number == random_number)
+            console.log("Draw");
+        else
+            console.log("Computer WON!!!")
+
+        // Assignment 3 ( b )
+        var integer_number = Math.floor(Math.random() * 101 ); // Return random number between 0 and 100
+
+        if (integer_number % 2 == 0)
+            console.log(`\n${integer_number} is Even Number`);
+        else
+            console.log(`\n${integer_number} is Odd Number`);
+        
+    </script>
+</body>
+</html>
