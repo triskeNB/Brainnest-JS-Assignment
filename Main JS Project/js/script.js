@@ -1,20 +1,17 @@
 function computerSelection() {
     const hand = ['Rock', 'Paper', 'Scissors'];
-
-    // 3 is the size of array
     return hand[Math.floor(Math.random() * hand.length )];
 }
 
 function playRound(playerSelection, computerSelection) {
-    
     playerSelection = playerSelection.toLowerCase();
     computerSelection = computerSelection.toLowerCase();
     console.log(`Computer Selection: ${computerSelection}`);
     
-    // If player and computer have the same hand
     if (playerSelection == computerSelection) {
         return "Draw!!\n";
-    }
+    } 
+    
     else if ( (playerSelection == "rock" && computerSelection == "scissors") ) {
         playerPoints++;
         return `You Won! ${playerSelection} beats ${computerSelection}\n`;
@@ -37,10 +34,8 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
-
-    
+  
     for (let turn = 0; turn < 5; turn++) {
-        
         var userSelection = prompt("Please Select: Rock, Paper, Scissors")
         console.log( `Winner: ${ playRound( userSelection, computerSelection() ) }` );
     }
